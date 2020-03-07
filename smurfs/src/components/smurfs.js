@@ -2,13 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getSmurfs } from '../actions';
 
-const Smurfs = () => {
+const Smurfs = ({ getSmurfs, smurf, isFetching, error }) => {
 	if (isFetching) {
 		return <h2> Finding the smurfs!</h2>;
 	}
 	return (
 		<div>
 			<div> Smurfs</div>
+			<h1>{smurf}</h1>
+			<button onClick={getSmurfs}>Find the Smurfs</button>
 		</div>
 	);
 };
