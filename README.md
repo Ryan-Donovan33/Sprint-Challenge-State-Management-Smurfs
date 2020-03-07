@@ -23,10 +23,24 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+Context API allows for the child component to have access to a value you that in the parent component directly without passing it to every component
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+Actions fire off to the reducer which takes the data and passes it to the store which then the data is stored.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+Application state is the global state of the data while the Component state is more localized data. Both can be beneifical while component state is useful when being used on a smaller scale or project. 
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+Redux thunk is a middleware that lets you call action creators that will return a function.
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+Both seem beneficial but Context API seems better for what we do in L:ambda since its smaller projects. Easier to pass the data to individual components rather than redux which is global.
 
 ## Project Set Up
 
