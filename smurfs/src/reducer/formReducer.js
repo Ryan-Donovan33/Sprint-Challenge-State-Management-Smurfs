@@ -1,7 +1,7 @@
-import { LOADING, ADD_SMURF, ERROR } from '../actions';
+import { ADD_SMURF } from '../actions';
 
 const initialState = {
-	smurf: [
+	smurfs: [
 		{
 			name: '',
 			age: '',
@@ -18,7 +18,7 @@ export const formReducer = (state = initialState, action) => {
 			const newSmurf = { name: action.payload };
 			return {
 				...state,
-				smurf: [ ...state.smurf, newSmurf ]
+				smurfs: [ ...state.smurfs, newSmurf ]
 			};
 		default:
 			return state;

@@ -1,12 +1,10 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 
 import Smurfs from './smurfs';
 import SmurfsForm from './smurfsForm';
 import './App.css';
 
 const App = () => {
-	// const [ smurfList, setSmurfList ] = useState([]);
-
 	return (
 		<div className="App">
 			<h1>SMURFS! 2.0 W/ Redux</h1>
