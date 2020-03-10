@@ -10,7 +10,6 @@ const Smurfs = ({ getSmurfs, smurf, isFetching, error }) => {
 		<div>
 			<div> Smurfs</div>
 			<div>
-				{' '}
 				{smurf.map((el) => (
 					<div key={el.id}>
 						<p>{el.name}</p>

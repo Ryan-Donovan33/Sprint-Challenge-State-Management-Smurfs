@@ -10,7 +10,7 @@ export const ERROR = 'ERROR';
 
 export const getSmurfs = () => (dispatch) => {
 	dispatch({ type: FETCHING_SMURF_START });
-	// const smurfArr = [];
+
 	axios
 		.get('http://localhost:3333/smurfs')
 		.then((res) => {
