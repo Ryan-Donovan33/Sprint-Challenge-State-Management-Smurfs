@@ -9,7 +9,15 @@ const Smurfs = ({ getSmurfs, smurf, isFetching, error }) => {
 	return (
 		<div>
 			<div> Smurfs</div>
-			<h1>{smurf}</h1>
+			<div>
+				{' '}
+				{smurf.map((el) => (
+					<div key={el.id}>
+						<p>{el.name}</p>
+						<p>{el.age}</p>
+					</div>
+				))}
+			</div>
 			<button onClick={getSmurfs}>Find the Smurfs</button>
 		</div>
 	);

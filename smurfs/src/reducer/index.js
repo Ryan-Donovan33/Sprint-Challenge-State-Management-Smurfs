@@ -1,7 +1,13 @@
 import { FETCHING_SMURF_START, FETCHING_SMURF_SUCCESS, FETCHING_SMURF_FAILURE } from '../actions';
 
 const initialState = {
-	smurf: [],
+	smurf: [
+		{
+			name: '',
+			age: '',
+			id: Date.now()
+		}
+	],
 	isFetching: false,
 	error: ''
 };

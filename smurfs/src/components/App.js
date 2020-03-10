@@ -4,7 +4,7 @@ import Smurfs from './smurfs';
 import './App.css';
 
 const App = () => {
-	const [ smurfList, setSmurfList ] = useState([]);
+	// const [ smurfList, setSmurfList ] = useState([]);
 
 	return (
 		<div className="App">
