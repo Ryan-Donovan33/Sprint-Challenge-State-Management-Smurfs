@@ -14,6 +14,7 @@ const Smurfs = ({ getSmurfs, smurf, isFetching, error }) => {
 					<div key={el.id}>
 						<p>{el.name}</p>
 						<p>{el.age}</p>
+						<p>{el.height}</p>
 					</div>
 				))}
 			</div>
