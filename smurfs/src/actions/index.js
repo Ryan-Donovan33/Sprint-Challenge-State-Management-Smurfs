@@ -34,7 +34,7 @@ export const addSmurf = (smurf) => (dispatch) => {
 		.post('http://localhost:3333/smurfs', smurf)
 		.then((res) => {
 			dispatch({ type: ADD_SMURF, payload: res.data });
-			dispatch({ type: ERROR });
+			// dispatch({ type: ERROR });
 		})
 		.catch((err) => {
 			dispatch({ type: ERROR });
